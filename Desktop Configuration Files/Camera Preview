@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Camera Preview
+Exec=raspistill -t 0
+Terminal=true
+Type=Application
+Icon=/home/pi/Pictures/Internet Downloads/Video.png
