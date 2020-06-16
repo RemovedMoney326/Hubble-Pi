@@ -1,5 +1,5 @@
 # Hubble-Pi
-Documentation, Resources and Python Codes for Raspberry Pi 4 with HQ 12MP Camera for portable Astrophotography and KStars Setup
+Documentation, Resources and Python Codes for portable Astrophotography and KStars Setup with Raspberry Pi 4 and HQ 12MP Camera Module
 ------------------------------------------------------------------------------------------------------------------------
 #Introduction and Motivation
 ------------------------------------------------------------------------------------------------------------------------
