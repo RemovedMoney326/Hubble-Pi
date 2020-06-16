@@ -15,7 +15,7 @@ Since I'm currently a physics student with a very huge interest in astrophysics,
 images/recordings with my telescope as well as easily finding objects in the night sky since a long time. Having recently 
 taken up an introduction to astrophysics as a winter semester lecture and after getting started this year with Linux as 
 well as Python, I recently came up with the idea of making such a setup with the Raspberry Pi 4 and the newly released 
-HQ 12Mp camera module an esteemed friend of mine told me about.
+HQ 12Mp camera module an esteemed friend of mine told me about. 
 
 This was ideal, since the Raspberry Pi also has the future potential of being programmed for autoguiding as well as doing 
 amateur stellar spectroscopy with the camera module and filters like the Star Analyser 100 due to being able to output the 
@@ -24,6 +24,7 @@ software. In addition, the ability to fully and manually control the camera modu
 high resolution Sony IMX477 sensor, meant these kind of applications would definitely be viable and highly adaptable for 
 conventional astrophotography too thanks to the flexibility of the Picamera package as well as Python for scientific and 
 numerical applications.
+
 ------------------------------------------------------------------------------------------------------------------------
 #Github Repository Structure
 ------------------------------------------------------------------------------------------------------------------------
