@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=AstroCam
+Exec=/home/pi/AstroCameraApp/PythonScripts/AstroCam.py
+Path=/home/pi/AstroCameraApp/PythonScripts/
+Terminal=false
+Type=Application
+Icon=/home/pi/Pictures/Internet Downloads/Camera.png
+Categories=Utility;Application;
