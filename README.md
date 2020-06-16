@@ -1,7 +1,7 @@
 # Hubble-Pi
 Documentation, Resources and Python Codes for Raspberry Pi 4 with HQ 12MP Camera for portable Astrophotography and KStars Setup
 ------------------------------------------------------------------------------------------------------------------------
-#Introcution and Motivation
+#Introduction and Motivation
 ------------------------------------------------------------------------------------------------------------------------
 First of all, hello and thank you for your interest in my Github repository about this little project of mine! 
 My name is Santiago Rodriguez and I'm the creator of this homebrewed telescope imaging and skyguiding system 
