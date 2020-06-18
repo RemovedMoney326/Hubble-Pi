@@ -67,22 +67,13 @@ def camHandler():
             camera.awb_gains = g
             if recording_duration==1:
               timeStamp = time.strftime("%Y%m%d-%H%M%S")
-              #jpgFile='/home/pi/Pictures/Astrophotography/JPG/img_'+timeStamp+'.jpg' #uncomment alongside line 72 for RAW ad JPG capture
-              rawFile='/home/pi/Pictures/Astrophotography/RAW/img_'+timeStamp+'.rgb'
-              #camera.capture(jpgFile)
-              camera.capture(rawFile, format='rgb')
+              jpgFile='/home/pi/Pictures/Astrophotography/JPG/img_'+timeStamp+'.jpg'
+              camera.capture(jpgFile,bayer=True)
               labelCapVal.set('Picture taken!')
             else:
                 camera.start_preview()
                 timeStamp = time.strftime("%Y%m%d-%H%M%S")
-                camera.capture_sequence(['/home/pi/Pictures/Astrophotography/RAW/img_'+timeStamp+'seq_%04d.rgb' % i for i in range(recording_duration)], format='rgb')                
-                #uncomment the for loop below and delete lines 77-78 for JPG and RAW capture
-                #for i in range(0,recording_duration,1):
-                    #timeStamp = time.strftime("%Y%m%d-%H%M%S")
-                    #jpgFile='/home/pi/Pictures/Astrophotography/JPG/img_'+timeStamp+'.jpg'
-                    #rawFile='/home/pi/Pictures/Astrophotography/RAW/img_'+timeStamp+'.rgba'
-                    #camera.capture(jpgFile)
-                    #camera.capture(rawFile, format='rgba')
+                camera.capture_sequence(['/home/pi/Pictures/Astrophotography/JPG/img_'+timeStamp+'seq_%04d.jpg' % i for i in range(recording_duration)], bayer=True)                
                 camera.stop_preview()
                 labelCapVal.set('Picture Row taken!')
             camera.exposure_mode = 'auto'
