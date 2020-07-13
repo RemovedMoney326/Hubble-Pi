@@ -36,3 +36,8 @@ or message me directly and I will try my best to address them as soon as possibl
 
 I hope this repo can be helpful to anyone trying to build a similar project and become a useful source of information on
 doing entry level Astrophotography with the Raspberry Pi :)
+
+------------------------------------------------------------------------------------------------------------------------
+#Update Log
+------------------------------------------------------------------------------------------------------------------------
+13.7.2020 - Changed the preview camera stream to use the picamera videoport option for stability on older Raspberry Pi models 
