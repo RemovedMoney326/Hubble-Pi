@@ -40,4 +40,4 @@ doing entry level Astrophotography with the Raspberry Pi :)
 ------------------------------------------------------------------------------------------------------------------------
 #Update Log
 ------------------------------------------------------------------------------------------------------------------------
-13.7.2020 - Changed the preview camera stream to use the picamera videoport option for stability on older Raspberry Pi models 
+13.7.2020 - Changed the preview camera stream on line 108 to use the picamera video_port=True option for stability on older Raspberry Pi models 
