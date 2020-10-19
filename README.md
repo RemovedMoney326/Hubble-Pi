@@ -42,3 +42,4 @@ doing entry level Astrophotography with the Raspberry Pi :)
 ------------------------------------------------------------------------------------------------------------------------
 13.7.2020 - Changed the preview camera stream on line 108 to use the picamera video_port=True option for improved stability
 on older Raspberry Pi models 
+19.10.2020 - Added grayscale capturing functionality for use with astrophotography filters
