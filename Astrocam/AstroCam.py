@@ -98,6 +98,10 @@ def camHandler():
             #set parameter
             #camera.shutter_speed = camera.exposure_speed
             DynamicCaptureResolution = (int(4056/scaleBinning.get()),int(3040/scaleBinning.get()))
+            if var_mono.get() == 1:
+                camera.color_effects = (128,128)
+            else:
+                camera.color_effects = None
             camera.ISO = scaleISO.get()
             recording_duration = scaleRecordingDuration.get()
             camera.sharpness = scaleSharpness.get()
@@ -148,7 +152,7 @@ previewPanel.pack(side = "bottom", fill = "both", expand = "yes")
 
 tkBottom = Tkinter.Toplevel(tkTop)
 tkBottom.wm_title("Advanced Settings")
-tkBottom.geometry("610x300+0+330")
+tkBottom.geometry("680x300+0+330")
 
 tkButtonQuit = Tkinter.Button(
     tkTop, text="Quit", command=quit)
@@ -240,6 +244,14 @@ scaleSaturation = Tkinter.Scale(
     label="Saturation")
 scaleSaturation.set(0)
 scaleSaturation.pack(side="left")
+
+var_mono = Tkinter.IntVar()
+checkboxMonochrome = Tkinter.Checkbutton(
+    tkBottom, 
+    text="Mono", 
+    variable=var_mono,
+    )
+checkboxMonochrome.pack(side="left")
 
 print("Start")
 startCamHandler()
